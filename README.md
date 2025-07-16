@@ -24,6 +24,7 @@ A clean, functional Python GUI that calculates monthly and total loan payments b
 loan-calculator-python/  
 - loan_calculator.py  
 - README.md
+- license
 
 ## Author
 Created by **Rob Foster**
