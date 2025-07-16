@@ -27,5 +27,5 @@ loan-calculator-python/
 - license
 
 ## Author
-Created by **Rob Foster**
+Created by **Rob S. Foster**
 [GitHub Portfolio](https://github.com/robfost)
