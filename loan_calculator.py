@@ -21,9 +21,9 @@ def calculate_payment():
 
         result_label.config(
             fg="green",
-            text=f"📊 Monthly Payment: ${monthly_payment:,.2f}\n
-                   📊 Total Payment: ${total_payment:,.2f}\n
-                   📊 Total Interest: ${total_interest:,.2f}"
+            text=f"📊 Monthly Payment: ${monthly_payment:,.2f}\n"
+                 f"📊 Total Payment: ${total_payment:,.2f}\n"
+                 f"📊 Total Interest: ${total_interest:,.2f}"
         )
     except ValueError:
         messagebox.showerror("Invalid Input", "Please enter numeric values.")
