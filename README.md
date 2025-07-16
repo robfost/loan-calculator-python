@@ -1,21 +1,19 @@
 # Loan Calculator App
 
-A simple Python GUI application that calculates monthly and total loan payments.
+A simple Python GUI app that calculates monthly and total loan payments.
 
 ## Features
-- User input fields for loan amount, interest rate, and loan term
-- Monthly payment calculation using standard amortization formula
-- Clear and reset buttons for ease of use
-- Error handling for invalid inputs
+- User input for amount, interest rate, and term
+- Monthly and total payment calculator
+- Input validation and error messaging
+- Clean interface with Tkinter
 
 ## Technologies Used
 - Python 3.x
-- Tkinter for GUI
+- Tkinter
 
 ## Status
-🚧 In development — actively building interface and backend logic.
+🚧 In progress — basic structure built, enhancements coming soon
 
-## Future Enhancements
-- Add loan summary breakdown
-- Save calculation history
-- Convert to web version (Flask or Django)
+## Author
+Created by Robert S. Foster — [github.com/robfost](https://github.com/robfost)
