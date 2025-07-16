@@ -25,8 +25,6 @@ def calculate_payment():
                    📊 Total Payment: ${total_payment:,.2f}\n
                    📊 Total Interest: ${total_interest:,.2f}"
         )
-
-        )
     except ValueError:
         messagebox.showerror("Invalid Input", "Please enter numeric values.")
 
