@@ -17,9 +17,15 @@ def calculate_payment():
         # Amortization formula
         monthly_payment = (loan_amount * monthly_rate) / (1 - (1 + monthly_rate) ** -months)
         total_payment = monthly_payment * months
+        total_interest = total_payment - loan_amount
 
         result_label.config(
-            text=f"Monthly Payment: ${monthly_payment:.2f}\nTotal Payment: ${total_payment:.2f}"
+            fg="green",
+            text=f"📊 Monthly Payment: ${monthly_payment:,.2f}\n
+                   📊 Total Payment: ${total_payment:,.2f}\n
+                   📊 Total Interest: ${total_interest:,.2f}"
+        )
+
         )
     except ValueError:
         messagebox.showerror("Invalid Input", "Please enter numeric values.")
@@ -35,17 +41,23 @@ root = tk.Tk()
 root.title("Loan Calculator")
 root.geometry("350x300")
 root.resizable(False, False)
+root.configure(bg="#f4f4f4")
+
+title_font = ("Segoe UI", 14, "bold")
+label_font = ("Segoe UI", 10)
+
+tk.Label(root, text="Loan Calculator", font=title_font, bg="#f4f4f4").pack(pady=10)
 
 # Widgets
-tk.Label(root, text="Loan Amount ($)").pack(pady=5)
+tk.Label(root, text="Loan Amount ($)", font=label_font, bg="#f4f4f4").pack(pady=5)
 entry_amount = tk.Entry(root)
 entry_amount.pack()
 
-tk.Label(root, text="Annual Interest Rate (%)").pack(pady=5)
+tk.Label(root, text="Annual Interest Rate (%)", font=label_font, bg="#f4f4f4").pack(pady=5)
 entry_rate = tk.Entry(root)
 entry_rate.pack()
 
-tk.Label(root, text="Loan Term (Years)").pack(pady=5)
+tk.Label(root, text="Loan Term (Years)", font=label_font, bg="#f4f4f4").pack(pady=5)
 entry_years = tk.Entry(root)
 entry_years.pack()
 
